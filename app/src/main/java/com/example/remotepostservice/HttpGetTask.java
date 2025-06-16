@@ -6,12 +6,16 @@ import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.TextView;
 
+import org.json.JSONObject;
+
 import java.io.InputStream;
 import java.math.BigDecimal;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class HttpGetTask extends AsyncTask<Integer, Void, String> {
+    private String responseUuidAndTime;
+    private String image_uuid, image_time;
     private String reString;
     private Activity mParentActivity;
     private ProgressDialog mDialog = null;
@@ -34,21 +38,42 @@ public class HttpGetTask extends AsyncTask<Integer, Void, String> {
         int taskId = params[0];
         if(taskId == 1){
             //サーバのデータを参照し画像を取得
-            mUri = "";
-            exec_get(mUri);
-            mUri = "";
+            mUri = "https://api.abc.ef/image?amount=1/";
+            responseUuidAndTime = exec_get(mUri);
+            try {
+                JSONObject root = new JSONObject(responseUuidAndTime);
+                image_uuid = root.getString("uuid");
+                image_time = root.getString("timestamp");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            mUri = "https://api.abc.ef/image/" + image_uuid;
             return exec_get(mUri);
         }
+
         else if(taskId == 11){
             //撮影し直し、画像を取得
-            mUri = "";
+            mUri = "https://api.abc.ef/image?amount=1/";
+            responseUuidAndTime = exec_get(mUri);
+            try {
+                JSONObject root = new JSONObject(responseUuidAndTime);
+                image_uuid = root.getString("uuid");
+                image_time = root.getString("timestamp");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            mUri = "https://api.abc.ef/image/" + image_uuid;
             return exec_get(mUri);
         }
+
         else if(taskId == 12){
             //音量を調節する
             mUri = "";
             return exec_get(mUri);
         }
+
         else if(taskId == 13){
             //カラスを撃退する
             mUri = "";

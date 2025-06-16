@@ -2,9 +2,9 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
     tools:context=".ShowDashborad">
 
     <LinearLayout
@@ -26,29 +26,31 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/TextView_latest_post_date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="最新のポスト："/>
 
             <ImageView
+                android:id="@+id/ImageView_latest_post_in_dashboard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/true_mouth"/>
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/button_to_update_post_activity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="最新のポストを撮り直す"/>
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/button_to_set_volume_activity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="音量を調整する"/>
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/button_to_repelling_crows_activity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="カラスを撃退する"/>

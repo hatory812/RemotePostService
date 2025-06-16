@@ -31,20 +31,27 @@
                 android:text="音量を調整してください"/>
 
             <TextView
+                android:id="@+id/TextView_volume_percent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="？％"/>
 
             <SeekBar
-                android:id="@+id/seekBar2"
+                android:id="@+id/seekBar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/button_set_volume"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="音量をセット"/>
+
+            <Button
+                android:id="@+id/button_return_dashboard_from_volume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="戻る"/>
 
         </LinearLayout>
 

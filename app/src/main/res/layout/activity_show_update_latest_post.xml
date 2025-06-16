@@ -31,12 +31,13 @@
                 android:text="最新のポストを\n更新しました"/>
 
             <ImageView
+                android:id="@+id/ImageView_latest_post_in_update"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/true_mouth"/>
 
             <Button
-                android:id="@+id/button1"
+                android:id="@+id/button_return_dashboard_from_update"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="戻る"/>

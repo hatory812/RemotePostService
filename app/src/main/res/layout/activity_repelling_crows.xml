@@ -31,10 +31,10 @@
                 android:text="カラスを撃退しました"/>
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/button_return_dashboard_from_repelling"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="音量をセット"/>
+                android:text="戻る"/>
 
         </LinearLayout>
 

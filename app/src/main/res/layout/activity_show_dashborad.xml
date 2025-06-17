@@ -54,7 +54,7 @@
                     android:layout_weight="1"
                     android:gravity="left"
                     android:textSize="18sp"
-                    android:text="???"/>
+                    android:text="test"/>
 
             </LinearLayout>
 

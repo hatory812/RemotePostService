@@ -61,8 +61,8 @@ public class ShowDashborad extends AppCompatActivity {
     @Override
     protected void onResume() {
         //画像取得のリクエスト
-        HttpGetTask task = new HttpGetTask(this, returnString);
-        task.execute(1);
+//        HttpGetTask task = new HttpGetTask(this, returnString);
+//        task.execute(1);
 
         //returnTextViewがレスポンス、
 

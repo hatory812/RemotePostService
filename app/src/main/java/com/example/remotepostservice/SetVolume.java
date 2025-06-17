@@ -29,8 +29,8 @@ public class SetVolume extends AppCompatActivity {
         buttonToRepellingCrowsActivity.setOnClickListener(new View.OnClickListener(){
             public void onClick(View arg0) {
             //リクエスト12
-                HttpGetTask task = new HttpGetTask(SetVolume.this, returnString);
-                task.execute(12);
+//                HttpGetTask task = new HttpGetTask(SetVolume.this, returnString);
+//                task.execute(12);
             }
         });
 

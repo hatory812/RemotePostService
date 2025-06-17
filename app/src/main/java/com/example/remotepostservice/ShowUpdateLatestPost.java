@@ -36,8 +36,8 @@ public class ShowUpdateLatestPost extends AppCompatActivity {
     @Override
     protected void onResume(){
         //リクエスト11
-        HttpGetTask task = new HttpGetTask(this, returnString);
-        task.execute(11);
+//        HttpGetTask task = new HttpGetTask(this, returnString);
+//        task.execute(11);
         super.onResume();
     }
 }

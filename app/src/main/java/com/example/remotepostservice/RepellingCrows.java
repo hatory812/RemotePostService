@@ -37,8 +37,8 @@ public class RepellingCrows extends AppCompatActivity {
     @Override
     protected void onResume(){
         //リクエスト13
-        HttpGetTask task = new HttpGetTask(this, returnString);
-        task.execute(13);
+//        HttpGetTask task = new HttpGetTask(this, returnString);
+//        task.execute(13);
         super.onResume();
     }
 }

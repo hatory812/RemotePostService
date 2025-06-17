@@ -34,11 +34,11 @@
                 android:text="音量を調整してください"/>
 
             <ImageView
-                android:id="@+id/ImageView_latest_post_in_dashboard"
                 android:layout_width="match_parent"
                 android:layout_height="500px"
                 android:layout_marginTop="100px"
-                app:srcCompat="@drawable/volume"/>
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/speaker"/>
 
             <TextView
                 android:id="@+id/TextView_volume_percent"

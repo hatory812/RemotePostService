@@ -29,23 +29,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="200px"
                 android:layout_marginTop="100px"
-                android:text="郵便ポストリモートサービス"
+                android:text="リモート郵便ポストサービス"
                 android:textSize="18sp"
                 android:gravity="center|bottom"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="200px"
-                android:text="True Post"
+                android:text="げきたいくん"
                 android:textSize="50sp"
                 android:gravity="center"/>
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="600px"
                 android:layout_marginTop="100px"
                 android:layout_marginBottom="100px"
-                app:srcCompat="@drawable/true_mouth"/>
+                app:srcCompat="@drawable/bird_karasu"/>
 
             <Button
                 android:id="@+id/button_to_show_dashboard"
@@ -54,7 +54,7 @@
                 android:layout_marginLeft="200px"
                 android:layout_marginRight="200px"
                 android:backgroundTint="#000000"
-                android:text="真実を見る"/>
+                android:text="始める"/>
 
         </LinearLayout>
 

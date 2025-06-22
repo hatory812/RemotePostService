@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RepellingCrows">
+    tools:context=".ShowAllPost">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,37 +25,30 @@
             android:layout_weight="8"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:layout_marginTop="100px"
-                android:layout_marginRight="50px"
-                android:layout_marginLeft="50px"
-                android:gravity="center"
-                android:text="カラスを撃退しました"/>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="800px"
-                app:srcCompat="@drawable/bird_karasu"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="40sp"
-                android:gravity="center"
-                android:text="カラス「・・・」"/>
-
             <Button
-                android:id="@+id/button_return_dashboard_from_repelling"
+                android:id="@+id/button_return_dashboard_from_all_post_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="150px"
+                android:layout_marginTop="30px"
                 android:layout_marginLeft="200px"
                 android:layout_marginRight="200px"
-                android:backgroundTint="#000000"
+                android:layout_marginBottom="30px"
                 android:text="戻る"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:id="@+id/layout_post_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                </LinearLayout>
+
+            </ScrollView>
 
         </LinearLayout>
 

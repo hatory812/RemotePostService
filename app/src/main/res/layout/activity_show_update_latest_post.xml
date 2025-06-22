@@ -31,7 +31,7 @@
                 android:textSize="18sp"
                 android:layout_marginTop="100px"
                 android:gravity="center"
-                android:text="最新のポストを更新しました"/>
+                android:text="最新の投稿を更新中です..."/>
 
             <ImageView
                 android:id="@+id/ImageView_latest_post_in_update"

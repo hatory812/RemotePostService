@@ -12,6 +12,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import org.json.JSONObject;
+
 public class RepellingCrows extends AppCompatActivity {
     private String returnString;
     @Override
@@ -36,9 +38,17 @@ public class RepellingCrows extends AppCompatActivity {
 
     @Override
     protected void onResume(){
-        //リクエスト13
-//        HttpGetTask task = new HttpGetTask(this, returnString);
-//        task.execute(13);
         super.onResume();
+
+        try {
+            JSONObject jsonObject = new JSONObject();
+            jsonObject.put("event", "play_sound");
+            jsonObject.put("timestamp", System.currentTimeMillis() / 1000);
+
+            new PostPlaySoundTask(this, jsonObject).execute();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

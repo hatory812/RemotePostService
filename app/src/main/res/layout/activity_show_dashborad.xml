@@ -40,43 +40,45 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="right"
-                    android:textSize="18sp"
-                    android:text="最新のポスト："/>
-
-                <TextView
                     android:id="@+id/TextView_latest_post_date"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:gravity="left"
+                    android:gravity="center"
                     android:textSize="18sp"
                     android:text="test"/>
 
             </LinearLayout>
 
             <Button
-                android:id="@+id/button_to_update_post_activity"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="100px"
-                android:layout_marginLeft="200px"
-                android:layout_marginRight="200px"
-                android:backgroundTint="#000000"
-                android:text="最新のポストを撮り直す"/>
-
-            <Button
-                android:id="@+id/button_to_set_volume_activity"
+                android:id="@+id/button_to_show_all_post_activity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25px"
                 android:layout_marginLeft="200px"
                 android:layout_marginRight="200px"
                 android:backgroundTint="#000000"
-                android:text="音量を調整する"/>
+                android:text="過去のポストを見る"/>
+
+            <Button
+                android:id="@+id/button_to_update_post_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25px"
+                android:layout_marginLeft="200px"
+                android:layout_marginRight="200px"
+                android:backgroundTint="#000000"
+                android:text="最新のポストを撮り直す"/>
+
+<!--            <Button-->
+<!--                android:id="@+id/button_to_set_volume_activity"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="25px"-->
+<!--                android:layout_marginLeft="200px"-->
+<!--                android:layout_marginRight="200px"-->
+<!--                android:backgroundTint="#000000"-->
+<!--                android:text="音量を調整する"/>-->
 
             <Button
                 android:id="@+id/button_to_repelling_crows_activity"
